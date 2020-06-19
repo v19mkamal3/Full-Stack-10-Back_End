@@ -11,13 +11,11 @@
 |
 */
 
-/*Route::get('/', function () {
-    return view('welcome');
-});*/
-
 Route::get('/', function () {
-    return view('coming-soon');
+    return view('welcome');
 });
+
+
 
 Route::match(['get', 'post'], '/admin','AdminController@login');
 
